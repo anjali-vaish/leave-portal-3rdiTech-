@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <script>
+        function redirectToDashboard() {
+            window.location.href = "index1.html";
+        }
+
+        function redirectToCalendar() {
+            window.location.href = "index2.html";
+        }
+
+        function redirectToStatus() {
+            window.location.href = "index3.html";
+        }
+
+        function redirectToBalance() {
+            window.location.href = "index4.html";
+        }
+
+        function redirectToApplyLeave() {
+            window.location.href = "index5.html";
+        }
+
+        function redirectToHome() {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="nav1">
+            <img src="https://pbs.twimg.com/profile_images/1638916968211415042/wbsn1kyc_400x400.jpg" alt="">
+            <p>User Dashboard </p>
+            <i class="ri-notification-3-fill"></i>
+            <button onclick="redirectToHome()">LOGOUT</button>
+        </div>
+        <div id="page1">
+            <div id="nav2">
+                <button onclick="redirectToDashboard()">
+                    <h1>Dashboard</h1>
+                    <i class="ri-dashboard-2-line"></i>
+                </button>
+                <button onclick="redirectToCalendar()">
+                    <h1>Leave Calendar</h1>
+                    <i class="ri-calendar-2-line"></i>
+                </button>
+                <button onclick="redirectToStatus()">
+                    <h1>Leave Status</h1>
+                    <i class="ri-checkbox-circle-line"></i>
+                </button>
+                <button onclick="redirectToBalance()">
+                    <h1>Leave Balance Summary</h1>
+                    <i class="ri-file-copy-2-line"></i>
+                </button>
+                <button onclick="redirectToApplyLeave()">
+                    <h1>Apply Leave</h1>
+                    <i class="ri-mail-send-line"></i>
+                </button>
+            </div>
+            <div id="page1-inner">
+                <div id="inner-left">
+                    WELCOME <br>TO <br> YOUR <br>DASHBOARD!
+                </div>
+                <div id="inner-right">
+                    <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg" alt="">
+                    <p>user name <br>email id <br>employee id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

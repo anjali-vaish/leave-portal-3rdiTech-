@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(33, 74, 92);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #8ab1cf; /* Lighter shade of blue */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1c355e; /* Blue color */
+}
+
+.leave-type {
+    background-color: #1c355e; /* Blue background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.leave-type:hover {
+    transform: scale(1.05);
+}
+
+.leave-type h2 {
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.leave-type p {
+    margin: 0;
+    color: #fff; /* White text color */
+}
+
+.leave-type .leave-details {
+    font-weight: bold;
+    margin-top: 10px;
+}

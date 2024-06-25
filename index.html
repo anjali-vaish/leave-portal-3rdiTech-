@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Add defer attribute -->
+</head>
+<body>
+    <div id="main">
+        <div id="login">
+            <h2>Login</h2>
+            <div class="login-options">
+                <button class="login-option admin" id="admin-login">
+                    <img src="https://cdn-icons-png.flaticon.com/256/6069/6069127.png" alt="Admin Login">
+                    <p>Admin Login</p>
+                </button>
+                <button class="login-option user" id="employee-login">
+                    <img src="https://i.pinimg.com/474x/92/c9/97/92c997f616e88fcafbd85261488e32e3.jpg" alt="Employee Login">
+                    <p>User Login</p>
+                </button>
+            </div>
+            <form id="login-form" action="login.php" method="post">
+                <input type="hidden" id="role" name="role"> <!-- Hidden input field for role -->
+                <label for="email">User ID:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div id="nav">
+            <img src="https://pbs.twimg.com/profile_images/1638916968211415042/wbsn1kyc_400x400.jpg" alt="">
+            <h1>Welcome To Leave Application Portal</h1>
+        </div>
+        <div id="content">
+            <img src="https://1.bp.blogspot.com/-dRsxNZrv5y8/YDK4FqOSWQI/AAAAAAAAi74/dIrfnLsNJvowxQNK5RK7MakADYffNDaIQCLcBGAsYHQ/s2048/3-1.JPG" alt="">    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminDashboard</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav1">
+            <img src="https://pbs.twimg.com/profile_images/1638916968211415042/wbsn1kyc_400x400.jpg" alt="">
+            <p>Admin Dashboard</p>
+            <i class="ri-notification-3-fill"></i>
+            <button id="logout-btn">LOGOUT</button> <!-- Added id for the logout button -->
+        </div>
+        <div id="page1">
+            <div id="nav2">
+                <button id="dashboard-btn">
+                    <h1>Dashboard</h1>
+                    <i class="ri-dashboard-2-line"></i>
+                </button>
+                <button id="leave-types-btn">
+                    <h1>Leave Types</h1>
+                    <i class="ri-calendar-2-line"></i>
+                </button>
+                <button id="leave-requests-btn">
+                    <h1>Leave Requests</h1>
+                    <i class="ri-checkbox-circle-line"></i>
+                </button>
+                <button id="announcement-btn">
+                    <h1>Announcement</h1>
+                    <i class="ri-speak-line"></i>
+                </button>
+                <button id="settings-btn">
+                    <h1>Settings</h1>
+                    <i class="ri-settings-3-line"></i>
+                </button>
+            </div>
+            <div id="page1-inner">
+                <div id="chart-container">
+                    <canvas id="leaveChart"></canvas>
+                </div>
+                <div id="employee-list">
+                    <table id="employee-table">
+                        <thead>
+                            <tr>
+                                <th>Employees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Employee names will be added dynamically here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script6.js"></script>
+    <script>
+        document.getElementById("logout-btn").addEventListener("click", function() {
+            window.location.href = "index.html"; // Redirect to index.html on logout
+        });
+
+        document.getElementById("leave-types-btn").addEventListener("click", function() {
+            window.location.href = "index7.html";
+        });
+
+        document.getElementById("leave-requests-btn").addEventListener("click", function() {
+            window.location.href = "index8.html";
+        });
+    </script>
+</body>
+</html>

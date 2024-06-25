@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="hero">
+        <div id="calendar"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#calendar').evoCalendar({
+
+
+                calendarEvents: [{
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2024", // Event date (required)
+        description: "Wish everyone a prosperous and happy new year!",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        id: 'event2',
+        name: "Republic Day",
+        date: "January/26/2024",
+        description: "Celebrating the adoption of the Indian Constitution.",
+        type: "holiday",
+        everyYear: true
+      },
+      {
+        name: "Vacation Leave",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2024", "February/15/2024"], // Date range
+        description: "Vacation leave for 3 days.", // Event description (optional)
+        type: "event",
+        color: "#63d867" // Event custom color (optional)
+      },
+      {
+        id: 'event3',
+        name: "Holi",
+        date: "March/25/2024",
+        description:"Hindu spring festival, also known as the festival of colors.",
+        type: "holiday",
+      },
+      {
+        id: 'event4',
+        name: "Good Friday",
+        date: "March/29/2024",
+        description:"Commemorating the crucifixion of Jesus Christ.",
+        type: "holiday",
+      },
+      {
+        id: 'event4',
+        name: "Id-ul-Fitr",
+        date: "April/11/2024",
+        description:" Celebrating the end of Ramadan, the Islamic holy month of fasting.",
+        type: "holiday",
+      },
+      {
+        id: 'event5',
+        name: "Ram Navmi",
+        date: "April/17/2024",
+        description:"Celebrating the birth of Lord Rama.",
+        type: "holiday",
+      },
+      {
+        id: 'event6',
+        name: "Mahavir Jayanti",
+        date: "April/21/2024",
+        description:"Celebrating the birth of Lord Mahavir, the founder of Jainism.",
+        type: "holiday",
+      },
+      {
+        id: 'event7',
+        name: "Buddha Purnima",
+        date: "May/23/2024",
+        description:"Celebrating the birth, enlightenment, and death of Gautama Buddha.",
+        type: "holiday",
+      },
+      {
+        id: 'event8',
+        name: "Id-ul-Zuha",
+        date: "June/17/2024",
+        description:"Also known as Bakrid, commemorating the willingness of Ibrahim to sacrifice his son as an act of obedience to God.",
+        type: "holiday",
+      },
+      {
+        id: 'event9',
+        name: "Muharram",
+        date: "July/17/2024",
+        description:"Observing the first month of the Islamic calendar, marking the martyrdom of Imam Hussain, the grandson of Prophet Muhammad.",
+        type: "holiday",
+      },
+      {
+        id: 'event10',
+        name: "Independence Day",
+        date: "August/15/2024",
+        description:"Commemorating the independence of India from British rule.",
+        type: "holiday",
+        everyYear: true,
+      },
+      {
+        id: 'event11',
+        name: "Janamashtami",
+        date: "August/26/2024",
+        description:"Celebrating the birth of Lord Krishna.",
+        type: "holiday",
+      },
+      {
+        id: 'event12',
+        name: "Id-e-Milad",
+        date: "September/16/2024",
+        description:"Celebrating the birth of the Islamic prophet Muhammad.",
+        type: "holiday",
+      },
+      {
+        id: 'event13',
+        name: "Gandhi Jayanti",
+        date: "October/2/2024",
+        description:" Commemorating the birth anniversary of Mahatma Gandhi, the Father of the Nation in India.",
+        type: "holiday",
+        everyYear: true,
+      },
+      {
+        id: 'event14',
+        name: "Dussehra",
+        date: "October/12/2024",
+        description:"Celebrating the victory of Lord Rama over the demon king Ravana.",
+        type: "holiday",
+      },
+      {
+        id: 'event15',
+        name: "Diwali",
+        date: "March/31/2024",
+        description:"Hindu festival of lights, symbolizing the victory of light over darkness and good over evil.",
+        type: "holiday",
+      },
+      {
+        id: 'event16',
+        name: "Guru Nanak Jayanti",
+        date: "November/15/2024",
+        description:"Celebrating the birth of Guru Nanak, the founder of Sikhism.",
+        type: "holiday",
+        everyYear: true,
+      },
+      {
+        id: 'event17',
+        name: "Christmas",
+        date: "December/25/2024",
+        description:"Celebrating the birth of Jesus Christ, observed as a religious and cultural holiday by billions of people around the world.",
+        type: "holiday",
+      },
+    ]
+            })
+        });
+    </script>
+</body>
+</html>

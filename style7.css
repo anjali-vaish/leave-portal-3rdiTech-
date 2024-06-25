@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(38, 198, 153);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #8ab1cf; /* Lighter shade of blue */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1c355e; /* Blue color */
+}
+
+.leave-type {
+    background-color: #1c355e; /* Blue background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.leave-type:hover {
+    transform: scale(1.05);
+}
+
+.leave-type h2 {
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.leave-type p {
+    margin: 0;
+    color: #fff; /* White text color */
+}
+
+.leave-type .leave-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leave-type .leave-details button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.leave-type .leave-details button.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.leave-type .leave-details button.delete-btn {
+    background-color: #f44336; /* Light Red */
+    color: white;
+}
+
+.leave-type .leave-details button:hover {
+    background-color: #ccc;
+}
+
+.add-new-leave button {
+    background-color: #ffff00; /* Yellow */
+    color: #1c355e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.add-new-leave button:hover {
+    background-color: #ccc;
+}
+
+.scroll-down {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.scroll-down a {
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    width: 24px;
+    height: 24px;
+}
+
+.scroll-down i {
+    color: #fff;
+    font-size: 24px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+</head>
+<body>
+    <h1>Leave Status</h1>
+    
+    <div class="summary">
+        <div class="summary-box">
+            <h2><i class="ri-user-line"></i> Requests</h2>
+            <p id="total-requests">0</p>
+        </div>
+        <div class="summary-box">
+            <h2><i class="ri-checkbox-circle-line"></i> Approved</h2>
+            <p id="approved-requests">0</p>
+        </div>
+        <div class="summary-box">
+            <h2><i class="ri-time-line"></i> Pending</h2>
+            <p id="pending-requests">0</p>
+        </div>
+    </div>
+
+    <div class="leave-filter">
+        <div class="dropdown">
+            <button class="dropbtn">Filter <i class="ri-arrow-drop-down-line"></i></button>
+            <div class="dropdown-content">
+                <a href="#" onclick="sortRequests('earliest')">Earliest Leave Date</a>
+                <a href="#" onclick="sortRequests('latest')">Latest Leave Date</a>
+                <a href="#" onclick="sortRequests('approved')">Approved Requests</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="leave-table">
+        <table id="leave-table">
+            <thead>
+                <tr>
+                    <th>Leave Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Leave requests will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

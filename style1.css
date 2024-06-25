@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#nav1 {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #000;
+    height: 15%; /* Decreased height */
+    width: 100%;
+    gap: 40px;
+}
+
+#nav1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#nav1 p {
+    margin-right: auto;
+    font-size: 30px;
+    color: white;
+}
+
+#nav1 button {
+    background-color: #ff5555;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nav1 i{
+    color: #fff;
+    font-size: 25px;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: row;
+    height: 85%; /* Adjusted height */
+    position: relative; /* Added position relative */
+}
+
+#nav2 {
+    background-color: #0e3246;
+    padding: 10px;
+    width: 20%;
+    height: 100%; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures last item sticks to the bottom */
+}
+
+#nav2 button {
+    background-color: #030615;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    cursor: pointer; /* Added cursor pointer */
+    transition: border 0.3s; /* Added transition effect */
+    height: 80px; /* Increased button height */
+}
+
+#nav2 button:hover {
+    border: 2px solid white; /* Added hover effect */
+}
+
+#nav2 button h1 {
+    margin-bottom: 5px;
+    font-size: 16px; /* Adjusted font size */
+}
+
+#nav2 i {
+    font-size: 24px; /* Adjusted font size */
+    color: #fff;
+}
+
+#nav2 i:last-child {
+    font-size: 30px; /* Increased font size */
+    margin-top: auto; /* Move the icon to the bottom */
+}
+
+#page1-inner {
+    position: absolute; /* Position absolute */
+    top: 0;
+    left: 20%; /* Adjusted left */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-left, #inner-right {
+    width: 50%; /* Changed width to 50% */
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 80px;
+    text-align: center;
+}
+
+#inner-left {
+    background: linear-gradient(45deg, #6ac1c5, rgb(33, 33, 51));
+    color: rgb(161, 194, 248);
+}
+
+#inner-right {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-right img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+#inner-right p {
+    margin-top: 20px;
+}
+
+/* Add animation for selected button */
+.selected {
+    border: 2px solid white;
+    border-radius: 5px;
+}

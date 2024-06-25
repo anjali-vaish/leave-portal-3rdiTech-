@@ -1,0 +1,172 @@
+/* CSS for Admin Dashboard */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#nav1 {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #000;
+    height: 15%; /* Decreased height */
+    width: 100%;
+    gap: 40px;
+}
+
+#nav1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#nav1 p {
+    margin-right: auto;
+    font-size: 30px;
+    color: white;
+}
+
+#nav1 button {
+    background-color: #ff5555;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nav1 i{
+    color: #fff;
+    font-size: 25px;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: row;
+    height: 85%; /* Adjusted height */
+    position: relative; /* Added position relative */
+}
+
+#nav2 {
+    background-color: #0e3246;
+    padding: 10px;
+    width: 20%;
+    height: 100%; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures last item sticks to the bottom */
+}
+
+#nav2 button {
+    background-color: #030615;
+    color: white;
+    padding: 10px 15px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Reduced the margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    cursor: pointer; /* Added cursor pointer */
+    transition: border 0.3s; /* Added transition effect */
+    height: 80px; /* Increased button height */
+}
+
+#nav2 button:first-child {
+    margin-top: 10px; /* Added margin to the first button */
+}
+
+#nav2 button:hover {
+    border: 2px solid white; /* Added hover effect */
+}
+
+#nav2 button h1 {
+    margin-bottom: 5px;
+    font-size: 16px; /* Adjusted font size */
+}
+
+#nav2 i {
+    font-size: 24px; /* Adjusted font size */
+    color: #fff;
+}
+
+#nav2 i:last-child {
+    font-size: 30px; /* Increased font size */
+    margin-top: auto; /* Move the icon to the bottom */
+}
+
+#page1-inner {
+    background-color: #6ac1c5; /* Light blue background */
+    text-align: center;
+    border-radius: 5px;
+    font-size: 40px; /* Increased font size */
+    font-weight: 100; /* Set font weight to 100 */
+    height: calc(100% - 40px); /* Adjusted height */
+    overflow-y: auto; /* Added vertical scroll if needed */
+    max-width: 80%; /* Added maximum width */
+    margin: auto; /* Centering the content horizontally */
+    display: flex; /* Added */
+    justify-content: space-between; /* Added */
+    align-items: flex-start; /* Added */
+    padding: 20px; /* Adjusted padding */
+}
+
+#welcome-message p {
+    font-size: 24px;
+}
+
+/* New CSS for employee names */
+#chart-container {
+    width: 100%; /* Adjusted width */
+    padding: 110px; /* Adjusted padding */
+}
+
+#employee-list {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size */
+    width:30%; /* Adjusted width */
+    padding: 110px; /* Adjusted padding */
+}
+
+#employee-list h2 {
+    margin-bottom: 10px;
+}
+
+#employee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#employee-table th,
+#employee-table td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#employee-table th {
+    background-color: #f2f2f2;
+}
+
+.employee-name {
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

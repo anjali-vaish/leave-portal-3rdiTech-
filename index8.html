@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Requests</title>
+    <link rel="stylesheet" href="style8.css">
+    <style>
+        .approve-button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .decline-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .highlight-approved {
+            background-color: #d4edda;
+        }
+        .highlight-declined {
+            background-color: #f8d7da;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leave Requests</h1>
+        <div class="status-boxes">
+            <div class="status-box pending">
+                <h2>Pending</h2>
+                <p class="count">0</p>
+            </div>
+            <div class="status-box approved">
+                <h2>Approved</h2>
+                <p class="count">0</p>
+            </div>
+            <div class="status-box denied">
+                <h2>Denied</h2>
+                <p class="count">0</p>
+            </div>
+        </div>
+        <div class="filter-options">
+            <label for="status-filter">Filter by Status:</label>
+            <select id="status-filter">
+                <option value="all">All</option>
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+                <option value="denied">Denied</option>
+            </select>
+            <label for="date-filter">Filter by Date:</label>
+            <input type="date" id="date-filter">
+        </div>
+        <table id="leave-requests">
+            <thead>
+                <tr>
+                    <th>Email</th> <!-- Changed to Email -->
+                    <th>Leave Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                    <th>Reason</th> <!-- Added Reason column -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Leave requests will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script8.js"></script>
+</body>
+</html>

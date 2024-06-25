@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #010213;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #83d1f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.status-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.status-box {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1;
+}
+
+.status-box.pending {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red */
+}
+
+.status-box.approved {
+    background-color: rgba(0, 128, 0, 0.2); /* Light green */
+}
+
+.status-box.denied {
+    background-color: rgba(0, 0, 255, 0.2); /* Light blue */
+}
+
+.status-box:hover {
+    transform: scale(1.05);
+}
+
+.status-box h2 {
+    margin: 0;
+    color: #333;
+}
+
+.status-box .count {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.filter-options label {
+    font-weight: bold;
+}
+
+.filter-options select,
+.filter-options input[type="date"] {
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 0, 0.2); /* Light yellow */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table th {
+    background-color: #5b898de4;
+    font-weight: bold;
+    text-align: left;
+}
+
+table td {
+    text-align: center;
+}
+
+table td.actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+table td.actions button.approve-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+}
+
+table td.actions button.deny-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+}
+
+table td.actions button:hover {
+    background-color: #ddd;
+}
